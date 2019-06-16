@@ -5,6 +5,5 @@
   <a href="https://github.com/TayfunCesur/CurvedBottomSheet"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" ></a>
   <a href="https://circleci.com/gh/TayfunCesur/Stepper"><img src="https://circleci.com/gh/TayfunCesur/CurvedBottomSheet.svg?style=svg" alt="Build Status"></a>
     <a href="https://android-arsenal.com/api?level=16"><img src="https://img.shields.io/badge/API-16%2B-orange.svg?style=flat" alt="api"></a>
-    <a href="https://jitpack.io/#TayfunCesur/CurvedBottomSheet"><img src="https://jitpack.io/#TayfunCesur/CurvedBottomSheet" alt="jitpack"></a>
-
+    <a href="https://jitpack.io/#TayfunCesur/CurvedBottomSheet"><img src="https://jitpack.io/v/TayfunCesur/CurvedBottomSheet.svg" alt="jitpack"></a>
 </p>
