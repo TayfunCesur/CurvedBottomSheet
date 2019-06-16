@@ -15,7 +15,7 @@ Curved-Bottom-Concave             |  Curved-Bottom-Convex             |  Curved-
 <img height="300" src="/art/bottomAndConcave.gif"></img>  |  <img height="300" src="/art/bottomAndConvex.gif"></img>  |  <img height="300" src="/art/topAndConcave.gif"></img>  |  <img height="300" src="/art/topAndConvex.gif"></img>  |  <img height="300" src="/art/waved.gif"></img>
 
 ### Summary
-Curved Bottom Sheet, helps you to display fancy, extraordinary UX with Bottom Sheet Behaviour. Even if its name contains Bottom,it also supports Top Sheet.If you bored classic BottomSheet, go on.
+Curved Bottom Sheet, helps you to display fancy, extraordinary UX with Bottom Sheet Behavior. Even if its name contains Bottom,it also supports Top Sheet.If you bored classic BottomSheet, go on.
 
 ### Download
 
