@@ -43,9 +43,13 @@ The sample app has all but if you want quick tip,
 
 ```
     <android.support.design.widget.CoordinatorLayout
-            ...>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <com.tayfuncesur.curvedbottomsheet.CurvedLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_sheet"
                 app:fillColor="@color/colorAccent"
                 app:behavior_hideable="false"
                 app:behavior_peekHeight="200dp"
