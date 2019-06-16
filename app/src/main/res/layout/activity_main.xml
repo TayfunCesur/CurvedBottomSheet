@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/appbarLayout"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:contentInsetStartWithNavigation="0dp"
+                app:contentInsetLeft="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    app:fontFamily="@font/manropemedium"
+                    android:id="@+id/toolbar_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+            />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:id="@+id/mainTitle"
+            android:text="Curved bottom sheet has many different types. You can use;\n
+             - Wave or Curve type,\n
+             - Top or Bottom location,\n
+             - Concave or Convex shapes\n
+All of them are enums. And default params are, Curve,Bottom and Concave shape."
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/appbarLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:fontFamily="@font/manropemedium"
+            android:padding="16sp"
+            android:layout_height="wrap_content"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            app:fontFamily="@font/manropemedium"
+            app:layout_constraintTop_toBottomOf="@+id/mainTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="16sp"
+            android:id="@+id/curveLabel"
+            android:text="Curve Shapes"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8sp"
+            app:layout_constraintTop_toBottomOf="@+id/curveLabel"
+            android:fontFamily="@font/manropemedium"
+            android:id="@+id/bottomAndConcave"
+            android:text="Bottom And Concave"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8sp"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8sp"
+            app:layout_constraintTop_toBottomOf="@+id/bottomAndConcave"
+            android:fontFamily="@font/manropemedium"
+            android:text="Bottom And Convex"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomAndConvex"
+            android:layout_marginLeft="8sp"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/curveLabel"
+            app:layout_constraintLeft_toRightOf="@+id/bottomAndConcave"
+            app:layout_constraintRight_toRightOf="parent"
+            android:fontFamily="@font/manropemedium"
+            android:id="@+id/topAndConcave"
+            android:text="Top And Concave"
+            android:layout_marginEnd="8sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8sp"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/bottomAndConcave"
+            app:layout_constraintLeft_toRightOf="@+id/bottomAndConvex"
+            app:layout_constraintRight_toRightOf="parent"
+            android:fontFamily="@font/manropemedium"
+            android:id="@+id/topAndConvex"
+            android:text="Top And Convex"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8sp"
+            android:layout_marginRight="8sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            app:fontFamily="@font/manropemedium"
+            app:layout_constraintTop_toBottomOf="@+id/bottomAndConvex"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="16sp"
+            android:id="@+id/waveLabel"
+            android:text="Wave Shape"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/waveLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/manropemedium"
+            android:text="Wave"
+            android:id="@+id/waveActivity"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            app:fontFamily="@font/manropemedium"
+            app:layout_constraintTop_toBottomOf="@+id/waveActivity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="16sp"
+            android:id="@+id/MixedLabel"
+            android:text="Bonuns : Mixed"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/MixedLabel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/manropemedium"
+            android:text="Mixed"
+            android:id="@+id/mixedActivity"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"/>
+
+</android.support.constraint.ConstraintLayout>

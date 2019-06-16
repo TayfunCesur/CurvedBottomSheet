@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurvedLayout">
+        <attr name="fillColor" format="color"/>
+        <attr name="showControlPoints" format="boolean"/>
+    </declare-styleable>
+</resources>

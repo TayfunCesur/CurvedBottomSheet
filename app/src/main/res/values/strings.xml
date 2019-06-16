@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Curved Bottom Sheet</string>
+    <string name="title">Mathematics everywhere!</string>
+    <string name="description">\tCurved bottom sheet, is based on Cubic Bezier Curves (CBC). Briefly, to draw CBC, you need four point. Start, end points and two control points. You can play it with this project or
+        some online tools. \n
+        \t Curved Bottom Sheet have different parameters. For instance;\n
+        enum Shape { \n
+        \tConcave,\n
+        \tConvex\n
+        }\n
+        \n
+        enum Type { \n
+        \tCURVE,\n
+        \tWAVE\n
+        }\n
+        \n
+        enum Location { \n
+        \tBOTTOM,\n
+        \tTOP\n
+        }
+
+        \n Event thought its name is BottomSheet, it also supports Top Gravity. You can just pass the Location parameter as Location.TOP and you will see the magic.
+    </string>
+    <string name="aboutme">Hi there.My name is Tayfun Cesur and I\'m from Turkey. I\'m an Android Engineer and I really love Android. It\'s not an only job for me it also lifestyle, hobby or whatever you say.
+        When I have free time, I looked my guide and see what can I learn today to become a professional developer. This time, it was Cubic Bezier Curve\'s turn and I have made some research about it. I can only say,
+        If you learn the theory that behind the scene, you can draw EVERYTHING you want. \n
+        In summary, you have FOUR points to draw something. Two of them are start and end points which are generally the left of screen and the right of screen. The rest of two points are control points which are pretty
+        important to draw CBC. Once you determine the points, you can only update it when scrolling event.
+    </string>
+    <string name="waveDescription">You can see the alpha animation in this tutorial. The alpha is updating when
+        scrolling according to offset value. You dont have to implement the callback, but if you want to play when
+        offset change then you have to. Implemetation sample is inside!
+    </string>
+</resources>

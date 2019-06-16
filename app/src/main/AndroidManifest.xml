@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.tayfuncesur.curvedbottomsheetdemo">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_dolphin"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/ic_dolphin"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CurvedAndBottomAndConcaveActivity"/>
+        <activity android:name=".CurvedAndBottomAndConvexActivity"/>
+        <activity android:name=".CurvedAndTopAndConcaveActivity"/>
+        <activity android:name=".CurvedAndTopAndConvexActivity"/>
+        <activity android:name=".WavedActivity"/>
+        <activity android:name=".MixedActivity"/>
+    </application>
+
+</manifest>
