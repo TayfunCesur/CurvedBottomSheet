@@ -7,3 +7,10 @@
     <a href="https://android-arsenal.com/api?level=16"><img src="https://img.shields.io/badge/API-16%2B-orange.svg?style=flat" alt="api"></a>
     <a href="https://jitpack.io/#TayfunCesur/CurvedBottomSheet"><img src="https://jitpack.io/v/TayfunCesur/CurvedBottomSheet.svg" alt="jitpack"></a>
 </p>
+
+
+### Outputs
+Curved-Bottom-Concave             |  Curved-Bottom-Convex             |  Curved-Top-Concave             |  Curved-Top-Convex             |  Waved
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+<img height="300" src="/art/bottomAndConcave.gif"></img>  |  <img height="300" src="/art/bottomAndConvex.gif"></img>  |  <img height="300" src="/art/topAndConcave.gif"></img>  |  <img height="300" src="/art/topAndConvex.gif"></img>  |  <img height="300" src="/art/waved.gif"></img>
+
