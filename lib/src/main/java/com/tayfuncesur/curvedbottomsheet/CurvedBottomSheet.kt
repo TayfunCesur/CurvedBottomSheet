@@ -7,12 +7,15 @@ import android.view.View
 
 class CurvedBottomSheet(
     private val radius: Float = 180F,
-    private var view: View,
+    private var view: CurvedLayout,
     private val type: Type = Type.CURVE,
     private val location: Location = Location.BOTTOM,
     private val shape: Shape = Shape.Concave,
     private val callback: Callback? = null
 ) {
+
+    lateinit var bottomSheetBehavior: BottomSheetBehavior<*>
+    lateinit var topSheetBehavior: TopSheetBehavior<*>
 
     enum class Type {
         CURVE, WAVE
@@ -26,14 +29,14 @@ class CurvedBottomSheet(
         Concave, Convex
     }
 
-    fun init() {
-        (view as CurvedLayout).radius = radius.toInt()
-        (view as CurvedLayout).type = type
-        (view as CurvedLayout).shape = shape
-        (view as CurvedLayout).location = location
+    fun init() : CurvedBottomSheet{
+        view.radius = radius.toInt()
+        view.type = type
+        view.shape = shape
+        view.location = location
         view.setBackgroundColor(Color.TRANSPARENT)
         if (location == Location.BOTTOM) {
-            val bottomSheetBehavior = BottomSheetBehavior.from(view)
+            bottomSheetBehavior = BottomSheetBehavior.from(view)
             bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
             bottomSheetBehavior.setBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
                 override fun onSlide(p0: View, p1: Float) {
@@ -47,7 +50,7 @@ class CurvedBottomSheet(
                 }
             })
         } else {
-            val topSheetBehavior = TopSheetBehavior.from(view)
+            topSheetBehavior = TopSheetBehavior.from(view)
             topSheetBehavior.setTopSheetCallback(object : TopSheetBehavior.TopSheetCallback() {
                 override fun onStateChanged(bottomSheet: View, newState: Int) {
 
@@ -61,7 +64,7 @@ class CurvedBottomSheet(
             })
 
         }
-
+        return this
     }
 
 }
