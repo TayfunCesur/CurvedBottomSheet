@@ -6,6 +6,8 @@
   <a href="https://circleci.com/gh/TayfunCesur/CurvedBottomSheet"><img src="https://circleci.com/gh/TayfunCesur/CurvedBottomSheet.svg?style=svg" alt="Build Status"></a>
     <a href="https://android-arsenal.com/api?level=16"><img src="https://img.shields.io/badge/API-16%2B-orange.svg?style=flat" alt="api"></a>
     <a href="https://jitpack.io/#TayfunCesur/CurvedBottomSheet"><img src="https://jitpack.io/v/TayfunCesur/CurvedBottomSheet.svg" alt="jitpack"></a>
+   <a href="https://android-arsenal.com/details/1/7716"><img src="https://img.shields.io/badge/Android%20Arsenal-Curved%20Bottom%20Sheet-green.svg?style=flat" alt="jitpack"></a>
+  
 </p>
 
 
