@@ -29,14 +29,14 @@ class CurvedLayout @JvmOverloads constructor(
     private val mControlPoint2 = Point()
 
 
-    private var mNavigationBarWidth: Int = 0
-    private var mNavigationBarHeight: Int = 0
+    private var mWidth: Int = 0
+    private var mHeight: Int = 0
 
 
     init {
 
         val ta = context.obtainStyledAttributes(attrs, R.styleable.CurvedLayout, defStyleAttr, 0)
-        fillColor = ta.getColor(R.styleable.CurvedLayout_fillColor, Color.parseColor("#FFFFFF"))
+        fillColor = ta.getColor(R.styleable.CurvedLayout_fillColor, Color.WHITE)
         showControlPoints = ta.getBoolean(R.styleable.CurvedLayout_showControlPoints, false)
         ta.recycle()
 
@@ -57,8 +57,8 @@ class CurvedLayout @JvmOverloads constructor(
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
-        mNavigationBarWidth = width
-        mNavigationBarHeight = height
+        mWidth = width
+        mHeight = height
 
         if (location == CurvedBottomSheet.Location.TOP)
             mPath.fillType = Path.FillType.INVERSE_EVEN_ODD
@@ -67,7 +67,7 @@ class CurvedLayout @JvmOverloads constructor(
             if (shape == CurvedBottomSheet.Shape.Concave) {
                 if (location == CurvedBottomSheet.Location.BOTTOM) {
                     mCurveStartPoint.set(0, radius)
-                    mCurveEndPoint.set(mNavigationBarWidth, radius)
+                    mCurveEndPoint.set(mWidth, radius)
 
                     mControlPoint1.set(
                         mCurveStartPoint.x + radius * 4 / 3,
@@ -76,7 +76,7 @@ class CurvedLayout @JvmOverloads constructor(
                     mControlPoint2.set(mCurveEndPoint.x - radius * 4 / 3, mCurveEndPoint.y - radius)
                 } else {
                     mCurveStartPoint.set(0, height - radius)
-                    mCurveEndPoint.set(mNavigationBarWidth, mNavigationBarHeight - radius)
+                    mCurveEndPoint.set(mWidth, mHeight - radius)
 
 
                     mControlPoint1.set(mCurveStartPoint.x + radius, height)
@@ -86,14 +86,14 @@ class CurvedLayout @JvmOverloads constructor(
             } else {
                 if (location == CurvedBottomSheet.Location.BOTTOM) {
                     mCurveStartPoint.set(0, 0)
-                    mCurveEndPoint.set(mNavigationBarWidth, 0)
+                    mCurveEndPoint.set(mWidth, 0)
 
 
                     mControlPoint1.set(mCurveStartPoint.x + radius, mCurveStartPoint.y + radius)
                     mControlPoint2.set(mCurveEndPoint.x - radius, mCurveEndPoint.y + radius)
                 } else {
-                    mCurveStartPoint.set(0, mNavigationBarHeight)
-                    mCurveEndPoint.set(mNavigationBarWidth, mNavigationBarHeight)
+                    mCurveStartPoint.set(0, mHeight)
+                    mCurveEndPoint.set(mWidth, mHeight)
 
 
                     mControlPoint1.set(mCurveStartPoint.x + radius, height - radius)
@@ -103,7 +103,7 @@ class CurvedLayout @JvmOverloads constructor(
             }
         } else {
             mCurveStartPoint.set(0, radius)
-            mCurveEndPoint.set(mNavigationBarWidth, radius)
+            mCurveEndPoint.set(mWidth, radius)
 
 
             mControlPoint1.set(mCurveStartPoint.x + radius, mCurveStartPoint.y - radius)
@@ -125,9 +125,9 @@ class CurvedLayout @JvmOverloads constructor(
                 mCurveEndPoint.x.toFloat(), mCurveEndPoint.y.toFloat()
             )
 
-            lineTo(mNavigationBarWidth.toFloat(), 0f)
-            lineTo(mNavigationBarWidth.toFloat(), mNavigationBarHeight.toFloat())
-            lineTo(0f, mNavigationBarHeight.toFloat())
+            lineTo(mWidth.toFloat(), 0f)
+            lineTo(mWidth.toFloat(), mHeight.toFloat())
+            lineTo(0f, mHeight.toFloat())
             close()
         }
 
@@ -138,10 +138,10 @@ class CurvedLayout @JvmOverloads constructor(
             if (shape == CurvedBottomSheet.Shape.Concave) {
                 if (location == CurvedBottomSheet.Location.BOTTOM) {
                     mCurveStartPoint.set(0, radius.toInt())
-                    mCurveEndPoint.set(mNavigationBarWidth, radius.toInt())
+                    mCurveEndPoint.set(mWidth, radius.toInt())
                 } else {
-                    mCurveStartPoint.set(0, mNavigationBarHeight - radius.toInt())
-                    mCurveEndPoint.set(mNavigationBarWidth, mNavigationBarHeight - radius.toInt())
+                    mCurveStartPoint.set(0, mHeight - radius.toInt())
+                    mCurveEndPoint.set(mWidth, mHeight - radius.toInt())
                 }
             } else {
                 if (location == CurvedBottomSheet.Location.BOTTOM) {
@@ -150,17 +150,17 @@ class CurvedLayout @JvmOverloads constructor(
                 } else {
                     mControlPoint1.set(
                         (mCurveStartPoint.x + radius).toInt(),
-                        mNavigationBarHeight - radius.toInt()
+                        mHeight - radius.toInt()
                     )
                     mControlPoint2.set(
                         (mCurveEndPoint.x - radius).toInt(),
-                        mNavigationBarHeight - radius.toInt()
+                        mHeight - radius.toInt()
                     )
                 }
             }
         } else {
             mCurveStartPoint.set(0, radius.toInt())
-            mCurveEndPoint.set(mNavigationBarWidth, radius.toInt())
+            mCurveEndPoint.set(mWidth, radius.toInt())
             mControlPoint1.set(
                 (mCurveStartPoint.x + radius).toInt(),
                 (mCurveStartPoint.y - radius).toInt()
@@ -183,9 +183,9 @@ class CurvedLayout @JvmOverloads constructor(
                 mCurveEndPoint.x.toFloat(), mCurveEndPoint.y.toFloat()
             )
 
-            lineTo(mNavigationBarWidth.toFloat(), 0f)
-            lineTo(mNavigationBarWidth.toFloat(), mNavigationBarHeight.toFloat())
-            lineTo(0f, mNavigationBarHeight.toFloat())
+            lineTo(mWidth.toFloat(), 0f)
+            lineTo(mWidth.toFloat(), mHeight.toFloat())
+            lineTo(0f, mHeight.toFloat())
             close()
             invalidate()
         }
