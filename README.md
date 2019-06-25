@@ -31,10 +31,11 @@ allprojects {
 }
 ```
 Add the dependency:
-
+    <a href="https://jitpack.io/#TayfunCesur/CurvedBottomSheet"><img src="https://jitpack.io/v/TayfunCesur/CurvedBottomSheet.svg" alt="jitpack"></a>
+    
 ```groovy 
 dependencies {
-    implementation 'com.github.TayfunCesur:CurvedBottomSheet:1.0.1'
+    implementation "com.github.TayfunCesur:CurvedBottomSheet:$latest_version"
 }
 ``` 
 
