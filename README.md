@@ -53,7 +53,7 @@ The sample app has all but if you want quick tip,
 
 
 ```
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -66,12 +66,12 @@ The sample app has all but if you want quick tip,
                 app:fillColor="@color/colorAccent"
                 app:behavior_hideable="false"
                 app:behavior_peekHeight="200dp"
-                app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
                 
                 //Your view here
                 
      </com.tayfuncesur.curvedbottomsheet.CurvedLayout>
- </android.support.design.widget.CoordinatorLayout>
+ </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 ```
 
