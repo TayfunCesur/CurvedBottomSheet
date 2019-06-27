@@ -1,9 +1,9 @@
 package com.tayfuncesur.curvedbottomsheetdemo
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import android.view.View
 import com.tayfuncesur.curvedbottomsheet.CurvedBottomSheet
 import com.tayfuncesur.curvedbottomsheet.CurvedLayout

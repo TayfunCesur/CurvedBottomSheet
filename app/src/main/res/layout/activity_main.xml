@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -16,7 +16,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:id="@+id/appbarLayout"
             android:theme="@style/AppTheme.AppBarOverlay">
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -28,7 +28,7 @@
                 app:contentInsetLeft="0dp"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
 
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
@@ -39,11 +39,11 @@
                     android:textSize="18sp"
             />
 
-        </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
 
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:id="@+id/mainTitle"
             android:text="Curved bottom sheet has many different types. You can use;\n
@@ -60,7 +60,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_height="wrap_content"/>
 
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             app:fontFamily="@font/manropemedium"
             app:layout_constraintTop_toBottomOf="@+id/mainTitle"
@@ -72,7 +72,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:textStyle="bold"
             android:layout_height="wrap_content"/>
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginStart="8sp"
@@ -84,7 +84,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_marginLeft="8sp"/>
 
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginStart="8sp"
@@ -96,7 +96,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_marginLeft="8sp"/>
 
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/curveLabel"
             app:layout_constraintLeft_toRightOf="@+id/bottomAndConcave"
@@ -109,7 +109,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_marginRight="8sp"/>
 
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/bottomAndConcave"
             app:layout_constraintLeft_toRightOf="@+id/bottomAndConvex"
@@ -121,7 +121,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_marginEnd="8sp"
             android:layout_marginRight="8sp"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             app:fontFamily="@font/manropemedium"
             app:layout_constraintTop_toBottomOf="@+id/bottomAndConvex"
@@ -134,7 +134,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_height="wrap_content"/>
 
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_marginStart="16sp"
             app:layout_constraintTop_toBottomOf="@+id/waveLabel"
@@ -145,7 +145,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_height="wrap_content"
             android:layout_marginLeft="16sp"/>
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             app:fontFamily="@font/manropemedium"
             app:layout_constraintTop_toBottomOf="@+id/waveActivity"
@@ -158,7 +158,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_height="wrap_content"/>
 
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_marginStart="16sp"
             app:layout_constraintTop_toBottomOf="@+id/MixedLabel"
@@ -169,4 +169,4 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             android:layout_height="wrap_content"
             android:layout_marginLeft="16sp"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
