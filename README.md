@@ -55,7 +55,9 @@ The sample app has all but if you want quick tip,
 ```
     <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android">
 
         <com.tayfuncesur.curvedbottomsheet.CurvedLayout
                 android:layout_width="match_parent"
