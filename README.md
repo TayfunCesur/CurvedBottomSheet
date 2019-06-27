@@ -38,7 +38,7 @@ dependencies {
     implementation "com.github.TayfunCesur:CurvedBottomSheet:$latest_version"
 }
 ``` 
-Note: This project has been migrated to AndroidX at v1.1 by the contribution of @ChintanRathod.
+**Note:** This project has been migrated to AndroidX at v1.1 by the contribution of @ChintanRathod.
 If you haven't migrated your project to AndroidX yet, you can use v1.0.2
 
 ```groovy 
