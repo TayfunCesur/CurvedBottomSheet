@@ -152,7 +152,7 @@ All of them are enums. And default params are, Curve,Bottom and Concave shape."
             app:layout_constraintLeft_toLeftOf="parent"
             android:padding="16sp"
             android:id="@+id/MixedLabel"
-            android:text="Bonuns : Mixed"
+            android:text="Bonus : Mixed"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
             android:layout_height="wrap_content"/>
