@@ -1,7 +1,7 @@
 package com.tayfuncesur.curvedbottomsheet
 
 import android.graphics.Color
-import android.support.design.widget.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import android.view.View
 
 
