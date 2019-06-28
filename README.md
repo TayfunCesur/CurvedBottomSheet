@@ -124,6 +124,8 @@ If you pass the [Callback](https://github.com/TayfunCesur/CurvedBottomSheet/blob
  - Here is a good [article](https://ciechanow.ski/drawing-bezier-curves/)
  - [Online tool](https://www.desmos.com/calculator/cahqdxeshd) to play with it 
  - [Great Explanation Video](https://www.youtube.com/watch?v=TeXajQ62yZ8) in just 4 min
+ 
+## Here is the whole detailed [Medium Story](https://proandroiddev.com/how-i-made-curvedbottomsheet-5614bad3b8ca)
 
 ## Project Maintained By
 
