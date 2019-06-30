@@ -125,7 +125,7 @@ If you pass the [Callback](https://github.com/TayfunCesur/CurvedBottomSheet/blob
  - [Online tool](https://www.desmos.com/calculator/cahqdxeshd) to play with it 
  - [Great Explanation Video](https://www.youtube.com/watch?v=TeXajQ62yZ8) in just 4 min
  
-## Here is the whole detailed [Medium Story](https://proandroiddev.com/how-i-made-curvedbottomsheet-5614bad3b8ca)
+## Here is the all detailed [Medium Story](https://medium.com/p/how-i-made-curvedbottomsheet-5614bad3b8ca?source=email-a6db600d0cda--writer.postDistributed&sk=ec808be8f992d51929b83cd7bc185254)
 
 ## Project Maintained By
 
