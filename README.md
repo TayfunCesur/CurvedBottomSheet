@@ -35,7 +35,7 @@ Add the dependency:
     
 ```groovy 
 dependencies {
-    implementation "com.github.TayfunCesur:CurvedBottomSheet:$latest_version"
+    implementation "com.github.hak24:CurvedBottomSheet:$latest_version"
 }
 ``` 
 **Note:** This project has been migrated to AndroidX at v1.1 by the contribution of @ChintanRathod.
