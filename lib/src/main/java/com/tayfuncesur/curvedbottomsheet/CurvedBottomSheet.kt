@@ -46,14 +46,14 @@ class CurvedBottomSheet(
                 }
 
                 override fun onStateChanged(p0: View, p1: Int) {
-
+                    callback?.onStateChanged(p0, p1)
                 }
             })
         } else {
             topSheetBehavior = TopSheetBehavior.from(view)
             topSheetBehavior.setTopSheetCallback(object : TopSheetBehavior.TopSheetCallback() {
                 override fun onStateChanged(bottomSheet: View, newState: Int) {
-
+                    callback?.onStateChanged(bottomSheet, newState)
                 }
 
                 override fun onSlide(bottomSheet: View, slideOffset: Float, isOpening: Boolean?) {

@@ -28,6 +28,10 @@ class WavedActivity : AppCompatActivity() {
             view = bottom_sheet,
             type = CurvedBottomSheet.Type.WAVE,
             callback = object : Callback {
+                override fun onStateChanged(p0: View, state: Int) {
+
+                }
+
                 override fun onSlide(p0: View, p1: Float) {
                     contentLayout.alpha = p1
                     dolphinLayout.alpha = 1 - p1
