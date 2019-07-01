@@ -46,7 +46,7 @@ class CurvedBottomSheet(
                 }
 
                 override fun onStateChanged(p0: View, p1: Int) {
-
+                    callback?.onStateChanged(p0, p1)
                 }
             })
         } else {
