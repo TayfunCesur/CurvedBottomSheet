@@ -51,8 +51,7 @@ dependencies {
 
 The sample app has all but if you want quick tip,
 
-
-```
+```xml
     <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -75,13 +74,15 @@ The sample app has all but if you want quick tip,
 
 ```
 
-In your activity or fragment, 
-```
-CurvedBottomSheet(view = bottom_sheet,
-shape = CurvedBottomSheet.Shape.Concave,
-location = CurvedBottomSheet.Location.BOTTOM,
-type = CurvedBottomSheet.Type.CURVE)
-.init()
+In your activity or fragment,
+
+```kotlin
+ CurvedBottomSheet(
+            view = bottom_sheet,
+            shape = CurvedBottomSheet.Shape.Concave,
+            location = CurvedBottomSheet.Location.BOTTOM,
+            type = CurvedBottomSheet.Type.CURVE
+  ).init()
 ```
 
 ### Parameters
@@ -111,13 +112,14 @@ Explanation of app:fillColor             |  Explanation of app:showControlPoints
 This bonus part has already implemented in [WavedActivity](https://github.com/TayfunCesur/CurvedBottomSheet/blob/master/app/src/main/java/com/tayfuncesur/curvedbottomsheetdemo/WavedActivity.kt)
 
 If you pass the [Callback](https://github.com/TayfunCesur/CurvedBottomSheet/blob/master/lib/src/main/java/com/tayfuncesur/curvedbottomsheet/Callback.kt) parameter to CurvedBottomSheet, you gonna have 
-```
-            object : Callback {
-                override fun onSlide(p0: View, p1: Float) {
-                    // Here you can play alpha with p1 value. 
-                    contentLayout.alpha = p1
-                    dolphinLayout.alpha = 1 - p1
-                }
+
+```kotlin
+    object : Callback {
+        override fun onSlide(p0: View, p1: Float) {
+            // Here you can play alpha with p1 value.
+            contentLayout.alpha = p1
+            dolphinLayout.alpha = 1 - p1
+        }
 ```
 
 ### Useful Resources

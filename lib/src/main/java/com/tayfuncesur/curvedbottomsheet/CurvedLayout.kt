@@ -47,10 +47,12 @@ class CurvedLayout @JvmOverloads constructor(
         with(mPaint) {
             style = Paint.Style.FILL_AND_STROKE
             color = fillColor
+            isAntiAlias = true
         }
         with(circlePaint) {
             style = Paint.Style.FILL_AND_STROKE
             color = Color.parseColor("#4caf50")
+            isAntiAlias = true
         }
     }
 
